@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Tattoo Artist Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tattoo Artist Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>"Rose has been an artist their whole life, they've done it all. Painting, welding, carving, graphic design,sewing, songwriting, it was only a metter of time before they knew their future would be as a tattoo artist. On the photo picture for kindergarden they had a temporary tattoo of a bat on their face! In highschool they always had a mehindi kit on hand, henna art on all their friends. Rose has loved art, and body art is the highest form of beauty, skill, acuracy and dedication. Tens of thousands of hours spent to hone their craft, their love of beautiful things and to apply them to the ultimate canvas, the human body".</p>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here is a couple of the tattoos that Rose has done.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with the artist to schedule a consultation.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name"
+            placeholder="Name"<br> <br>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" placeholder="name@email.com">
+        </form>
+        <form>
+            <textarea id=""message">
+            </textarea>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Tattoo Artist Portfolio</p>
+    </footer>
+  </body>
+  
+</html>
+<script>
+    // add smooth scrolling to the navigation links
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(e.target.hash);
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+  </script>
+  <style>
+    body {
+  font-family: Garamond;
+}
+
+header {
+  text-align: center;
+  background-color: #47759b;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #47759b;
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+section {
+  width: 30%;
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #47759b;
+  color: white;
+  padding: 1rem;
+}
+
+  </style>
